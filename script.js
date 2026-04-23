@@ -2,7 +2,7 @@
 const menuData = [
   {
     category: "Soups",
-    emoji: "🍲",
+    emoji: "",
     items: [
       { id: 1,  type: "veg",    name: "Tom Kha Veg",                    price: 225,  aps: false, desc: "Coconut milk broth infused with lemongrass and galangal." },
       { id: 2,  type: "nonveg", name: "Tom Yum Chicken",                price: 235,  aps: false, desc: "Hot and sour Thai broth with lemongrass and mushroom." },
@@ -14,7 +14,7 @@ const menuData = [
   },
   {
     category: "Indian Starters — Veg",
-    emoji: "🌿",
+    emoji: "",
     items: [
       { id: 7,  type: "veg",    name: "Paneer Bhutta Seekh",            price: 355,  aps: false, desc: "Minced paneer blended with roasted corn and spices, skewered and charred." },
       { id: 8,  type: "veg",    name: "Cheese Malai Broccoli",          price: 355,  aps: false, desc: "Broccoli florets stuffed with cheese and roasted in tandoor." },
@@ -25,7 +25,7 @@ const menuData = [
   },
   {
     category: "Indian Starters — Non Veg",
-    emoji: "🍗",
+    emoji: "",
     items: [
       { id: 12, type: "nonveg", name: "Aslam Kebab",                    price: 375,  aps: false, desc: "Juicy, spice-marinated kebabs grilled to perfection with rich Mughlai flavors." },
       { id: 13, type: "nonveg", name: "Burasi Tikka",                   price: 375,  aps: false, desc: "Smoky, charred tikka infused with bold spices and a hint of earthy aroma." },
@@ -44,7 +44,7 @@ const menuData = [
   },
   {
     category: "Seafood Starters",
-    emoji: "🦐",
+    emoji: "",
     items: [
       { id: 25, type: "nonveg", name: "Apollo Fish",                    price: 655,  aps: false, desc: "Andhra-style Apollo fish — crispy, spicy, and tossed in a sizzling garlic-chilli tempering." },
       { id: 26, type: "nonveg", name: "Avakaya Rawas Tikka",            price: 655,  aps: false, desc: "Chunky Rawas cubes infused with bold Avakaya pickle spices and char-grilled with a smoky finish." },
@@ -55,7 +55,7 @@ const menuData = [
   },
   {
     category: "Mutton Starters",
-    emoji: "🥩",
+    emoji: "",
     items: [
       { id: 30, type: "nonveg", name: "Kakori Seekh",                   price: 475,  aps: false, desc: "Legendary melt-in-mouth kebabs, flavoured with Lucknowi spices and cooked on skewers." },
       { id: 31, type: "nonveg", name: "Piri Piri Mutton Fry",           price: 475,  aps: false, desc: "Spicy, fiery mutton tossed in bold peri-peri masala with a smoky, robust finish." }
@@ -63,7 +63,7 @@ const menuData = [
   },
   {
     category: "Asian Starters — Veg",
-    emoji: "🥢",
+    emoji: "",
     items: [
       { id: 32, type: "veg",    name: "Fiery 65 Paneer Tikka",          price: 345,  aps: false, desc: "Tandoori-style version of the classic paneer 65 — dry red chili base with curry leaf tadka." },
       { id: 33, type: "veg",    name: "Tamarind & Thai Chili Paneer",   price: 345,  aps: false, desc: "Sweet-sour tamarind glaze with bird's eye chili and kaffir lime over wok-seared paneer." },
@@ -73,7 +73,7 @@ const menuData = [
   },
   {
     category: "Asian Starters — Non Veg",
-    emoji: "🍜",
+    emoji: "",
     items: [
       { id: 36, type: "nonveg", name: "Malaysian Sambal Chicken",       price: 365,  aps: false, desc: "Crunchy chicken tossed in bold, spicy sambal (no sweetness)." },
       { id: 37, type: "nonveg", name: "Hot Wok Shack Chicken",          price: 365,  aps: false, desc: "A coastal-Asian mashup — shack-style roast chicken wok-tossed in soy, chilli, and garlic." },
@@ -84,7 +84,7 @@ const menuData = [
   },
   {
     category: "Asian Seafood",
-    emoji: "🦞",
+    emoji: "",
     items: [
       { id: 41, type: "nonveg", name: "Shanghai Rawas",                 price: 665,  aps: false, desc: "Wok-tossed rawas in a bold Shanghai-style sauce with garlic, soy, and a hint of spice." },
       { id: 42, type: "nonveg", name: "Shanghai Prawns",                price: 665,  aps: false, desc: "Wok-tossed prawns in a bold Shanghai-style sauce with garlic, soy, and a hint of spice." },
@@ -94,7 +94,7 @@ const menuData = [
   },
   {
     category: "Asian Rice & Noodles",
-    emoji: "🍚",
+    emoji: "",
     items: [
       { id: 45, type: "veg",    name: "Burnt Garlic Tom Yum Rice",      price: 385,  aps: false, desc: "Fiery Thai-style rice tossed with burnt garlic, lemongrass, and bold Tom Yum spices." },
       { id: 46, type: "veg",    name: "Thai Green Curry Rice Bowl",     price: 425,  aps: false, desc: "Fragrant jasmine rice served with green curry vegetables and Thai basil." },
@@ -109,7 +109,7 @@ const menuData = [
   },
   {
     category: "Indian Mains — Veg",
-    emoji: "🫕",
+    emoji: "",
     items: [
       { id: 54, type: "veg",    name: "Ghee Palak Paneer",              price: 375,  aps: false, desc: "Creamy spinach and soft paneer simmered in aromatic ghee for a rich, comforting flavor." },
       { id: 55, type: "veg",    name: "Mixed Veg in Poppy Seed & Green Chili Gravy", price: 365, aps: false, desc: "Bengali-style mixed vegetable curry in a creamy khus khus (poppy seed) base with fresh green chili heat." },
@@ -121,7 +121,7 @@ const menuData = [
   },
   {
     category: "Indian Mains — Chicken",
-    emoji: "🍛",
+    emoji: "",
     items: [
       { id: 60, type: "nonveg", name: "Anjeer Murgh Korma",             price: 385,  aps: false, desc: "Royal-style chicken curry simmered in a luxurious saffron and fig cream gravy — mildly sweet, rich, and aromatic." },
       { id: 61, type: "nonveg", name: "Coconut Vinegar Vindaloo Chicken", price: 385, aps: false, desc: "Goan-style fiery chicken curry with cold-pressed coconut vinegar, garlic, and chili — tangy, bold, and tropical." },
@@ -132,7 +132,7 @@ const menuData = [
   },
   {
     category: "Indian Mains — Mutton",
-    emoji: "🥘",
+    emoji: "",
     items: [
       { id: 65, type: "nonveg", name: "Kharda Mutton",                  price: 475,  aps: false, desc: "Green chilli-garlic crushed masala cooked with tender mutton pieces." },
       { id: 66, type: "nonveg", name: "Matton Varhadi",                 price: 475,  aps: false, desc: "Vidarbha-style spicy gravy with strong garam masala hit." },
@@ -142,7 +142,7 @@ const menuData = [
   },
   {
     category: "Indian Mains — Seafood",
-    emoji: "🐟",
+    emoji: "",
     items: [
       { id: 69, type: "nonveg", name: "Malvani Fish Curry",             price: 0,    aps: true,  desc: "Fresh coconut, roasted spices & kokum — bold, slightly spicy coastal gravy." },
       { id: 70, type: "nonveg", name: "Paplet Hirwa Masala",            price: 0,    aps: true,  desc: "Pomfret in green coriander-coconut gravy." }
@@ -150,7 +150,7 @@ const menuData = [
   },
   {
     category: "Dal",
-    emoji: "🫙",
+    emoji: "",
     items: [
       { id: 71, type: "veg",    name: "Yellow Dal Tadka",               price: 275,  aps: false, desc: "Classic yellow lentils tempered with ghee, garlic, and red chillies — comforting and flavorful." },
       { id: 72, type: "veg",    name: "Dal Bukhara",                    price: 315,  aps: false, desc: "Black urad dal simmered overnight in tomato, butter, and cream, enriched with Bukhara seeds." }
@@ -158,7 +158,7 @@ const menuData = [
   },
   {
     category: "Rice & Pulao",
-    emoji: "🍚",
+    emoji: "",
     items: [
       { id: 73, type: "veg",    name: "Mushroom Khichdi with Thyme Ghee Tadka", price: 315, aps: false, desc: "Wild mushrooms slow-cooked with moong dal rice, finished with thyme ghee and truffle oil." },
       { id: 74, type: "veg",    name: "Hyderabadi Matka Biryani — Veg",  price: 385, aps: false, desc: "Traditional Hyderabadi biryani slow-cooked in a clay pot for bold and rustic depth." },
@@ -170,7 +170,7 @@ const menuData = [
   },
   {
     category: "Indian Breads",
-    emoji: "🫓",
+    emoji: "",
     items: [
       { id: 79, type: "veg",    name: "Tandoori Roti",                  price: 35,   aps: false, desc: "Classic whole wheat roti baked fresh in the tandoor." },
       { id: 80, type: "veg",    name: "Naan",                           price: 65,   aps: false, desc: "Soft, fluffy naan baked in the tandoor." },
@@ -185,7 +185,7 @@ const menuData = [
   },
   {
     category: "Sweets",
-    emoji: "🍮",
+    emoji: "",
     items: [
       { id: 88, type: "veg",    name: "Ice Cream — Single Scoop",       price: 125,  aps: false, desc: "Creamy single scoop of your choice of flavour." },
       { id: 89, type: "veg",    name: "Ice Cream — Double Scoop",       price: 255,  aps: false, desc: "Generous double scoop of your choice of flavours." },
@@ -227,8 +227,19 @@ let activeFilter = "all";
 let searchQuery  = "";
 let collapsedSections = {};
 
-// ===== INIT =====
+// ===== STICKY FILTER BAR: measure header height dynamically =====
+function updateFilterTop() {
+  const header = document.getElementById("header");
+  const filterBar = document.getElementById("filterBar");
+  if (header && filterBar) {
+    filterBar.style.top = header.offsetHeight + "px";
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
+  updateFilterTop();
+  window.addEventListener("resize", updateFilterTop);
+
   renderMenu();
   document.getElementById("searchInput").addEventListener("input", (e) => {
     searchQuery = e.target.value.trim().toLowerCase();
@@ -275,11 +286,12 @@ function renderMenu() {
     const isCollapsed = collapsedSections[sIdx] || false;
     const sectionEl = document.createElement("div");
     sectionEl.className = "category-section";
+    sectionEl.id = "cat-section-" + sIdx;
 
     sectionEl.innerHTML = `
       ${sIdx > 0 ? '<div class="section-divider"></div>' : ''}
       <div class="category-header" onclick="toggleSection(${sIdx})">
-        <span class="category-title">${section.emoji} ${section.category}</span>
+        <span class="category-title">${section.category}</span>
         <span class="category-meta">
           <span class="category-count">${filtered.length} item${filtered.length !== 1 ? "s" : ""}</span>
           <span class="chevron ${isCollapsed ? "collapsed" : ""}">
@@ -401,4 +413,70 @@ function _closeModal() {
 // Close on Escape key
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") _closeModal();
+});
+
+// ===== CATEGORY SHEET =====
+function openCategorySheet() {
+  const catList = document.getElementById("catList");
+  catList.innerHTML = "";
+
+  // Total count
+  const total = menuData.reduce((sum, s) => sum + s.items.length, 0);
+
+  // "All Dishes" row
+  const allRow = document.createElement("div");
+  allRow.className = "cat-item";
+  allRow.innerHTML = `
+    <span class="cat-item-name all-dishes">All Dishes</span>
+    <span class="cat-item-count all-count">${total}</span>
+  `;
+  allRow.onclick = () => {
+    closeCategorySheetBtn();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+  catList.appendChild(allRow);
+
+  // One row per category
+  menuData.forEach((section, idx) => {
+    const row = document.createElement("div");
+    row.className = "cat-item";
+    row.innerHTML = `
+      <span class="cat-item-name">${section.category}</span>
+      <span class="cat-item-count">${section.items.length}</span>
+    `;
+    row.onclick = () => {
+      closeCategorySheetBtn();
+      // Scroll to section after sheet closes
+      setTimeout(() => {
+        const el = document.getElementById("cat-section-" + idx);
+        if (el) {
+          const offset = el.getBoundingClientRect().top + window.scrollY - 160;
+          window.scrollTo({ top: offset, behavior: "smooth" });
+        }
+      }, 320);
+    };
+    catList.appendChild(row);
+  });
+
+  document.getElementById("catOverlay").classList.remove("hidden");
+  document.body.style.overflow = "hidden";
+}
+
+function closeCategorySheet(e) {
+  if (e.target === document.getElementById("catOverlay")) {
+    closeCategorySheetBtn();
+  }
+}
+
+function closeCategorySheetBtn() {
+  document.getElementById("catOverlay").classList.add("hidden");
+  document.body.style.overflow = "";
+}
+
+// Close category sheet on Escape
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeCategorySheetBtn();
+    _closeModal();
+  }
 });

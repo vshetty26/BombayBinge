@@ -10,12 +10,17 @@
 
   <!-- STICKY HEADER -->
   <header class="header" id="header">
-    <div class="header-inner">
-      <div class="logo-wrap">
+    <!-- Row 1: Logo left + Title right -->
+    <div class="header-top-row">
+      <div class="header-logo-wrap">
         <img src="bombaybingelogo.jpeg" alt="Bombay Binge" class="logo"
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
         <div class="logo-fallback" style="display:none">BB</div>
       </div>
+      <h1 class="header-title">TABLE MENU</h1>
+    </div>
+    <!-- Row 2: Search bar full width -->
+    <div class="header-search-row">
       <div class="search-wrap" onclick="document.getElementById('searchInput').focus()">
         <span class="search-icon">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -53,7 +58,36 @@
     </div>
   </div>
 
-  <!-- MODAL OVERLAY -->
+  <!-- FLOATING MENU BUTTON -->
+  <button class="menu-fab" id="menuFab" onclick="openCategorySheet()">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+      <!-- Fork -->
+      <path d="M7 2v4c0 1.1.9 2 2 2h.5v14h1.5V8H11c1.1 0 2-.9 2-2V2h-1.5v3h-1V2H9v3H8V2H7z"/>
+      <!-- Knife -->
+      <path d="M16 2c-1.5 1.5-2 3.5-2 5.5V13h1.5v9H17V2h-1z"/>
+    </svg>
+    Menu
+  </button>
+
+  <!-- CATEGORY SHEET OVERLAY -->
+  <div class="cat-overlay hidden" id="catOverlay" onclick="closeCategorySheet(event)">
+    <div class="cat-sheet" id="catSheet">
+      <div class="cat-sheet-header">
+        <h2 class="cat-sheet-title">Browse Categories</h2>
+      </div>
+      <div class="cat-list" id="catList">
+        <!-- Rendered by JS -->
+      </div>
+      <div class="cat-sheet-footer">
+        <button class="cat-close-btn" onclick="closeCategorySheetBtn()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ITEM VIEW MODAL OVERLAY -->
   <div class="modal-overlay hidden" id="modalOverlay" onclick="closeModal(event)">
     <div class="modal-sheet" id="modalSheet">
       <button class="modal-close" onclick="closeModalBtn()">
