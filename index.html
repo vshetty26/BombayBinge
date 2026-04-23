@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bombay Binge – Menu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- STICKY HEADER -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <div class="logo-wrap">
+        <img src="bombaybingelogo.jpeg" alt="Bombay Binge" class="logo"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+        <div class="logo-fallback" style="display:none">BB</div>
+      </div>
+      <div class="search-wrap" onclick="document.getElementById('searchInput').focus()">
+        <span class="search-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </span>
+        <input type="text" id="searchInput" placeholder="Search in menu…" autocomplete="off" />
+      </div>
+    </div>
+  </header>
+
+  <!-- FILTER SECTION -->
+  <div class="filter-bar" id="filterBar">
+    <div class="filter-bar-inner">
+      <button class="filter-btn active" id="btnAll" onclick="setFilter('all')">All</button>
+      <button class="filter-btn veg-btn" id="btnVeg" onclick="setFilter('veg')">
+        <span class="dot dot-veg"></span> Veg
+      </button>
+      <button class="filter-btn nonveg-btn" id="btnNonveg" onclick="setFilter('nonveg')">
+        <span class="dot dot-nonveg"></span> Non-veg
+      </button>
+    </div>
+  </div>
+
+  <!-- MENU CONTENT -->
+  <main class="menu-main" id="menuMain">
+    <!-- Dynamically rendered by script.js -->
+  </main>
+
+  <!-- NO RESULTS -->
+  <div class="no-results hidden" id="noResults">
+    <div class="no-results-inner">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <p>No items found</p>
+    </div>
+  </div>
+
+  <!-- MODAL OVERLAY -->
+  <div class="modal-overlay hidden" id="modalOverlay" onclick="closeModal(event)">
+    <div class="modal-sheet" id="modalSheet">
+      <button class="modal-close" onclick="closeModalBtn()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal-img-wrap">
+        <img id="modalImg" src="" alt="" />
+      </div>
+      <div class="modal-body">
+        <div class="modal-type-row">
+          <span class="modal-dot" id="modalDot"></span>
+          <span class="modal-category" id="modalCategory"></span>
+        </div>
+        <h2 class="modal-name" id="modalName"></h2>
+        <p class="modal-price" id="modalPrice"></p>
+        <p class="modal-desc" id="modalDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
