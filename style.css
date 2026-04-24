@@ -36,48 +36,43 @@ body {
   background: #fff;
   border-bottom: 1px solid var(--border);
   box-shadow: 0 2px 10px rgba(0,0,0,0.07);
-  padding: 12px 16px 10px;
 }
 
-/* Row 1: logo left + title right */
-.header-top-row {
+/* Row 1: Logo centered */
+.header-logo-row {
   display: flex;
   align-items: center;
-  gap: 14px;
-  margin-bottom: 10px;
+  justify-content: center;
+  padding: 12px 16px 8px;
 }
 
-.header-logo-wrap {
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-}
-
-.header-title {
-  font-size: 32px;
-  font-weight: 900;
-  color: #1a6b1a;
-  letter-spacing: -0.5px;
-  line-height: 1;
-  flex: 1;
-}
-
-/* Row 2: search full width */
+/* Row 2: Search full width */
 .header-search-row {
-  width: 100%;
+  padding: 0 16px 12px;
 }
 
 .logo {
-  height: 90px;
-  width: 90px;
+  height: 180px;
+  width: 180px;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  animation: logoGlow 4s ease-in-out infinite;
+}
+
+@keyframes logoGlow {
+  0%, 100% { 
+    opacity: 0.85;
+    transform: scale(1);
+  }
+  50% { 
+    opacity: 1;
+    transform: scale(1.04);
+  }
 }
 
 .logo-fallback {
-  height: 90px;
-  width: 90px;
+  height: 180px;
+  width: 180px;
   border-radius: 50%;
   background: linear-gradient(135deg, #c8922a, #e8a83a);
   color: #fff;
@@ -88,6 +83,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  animation: logoGlow 4s ease-in-out infinite;
 }
 
 .search-wrap {
@@ -730,7 +726,8 @@ body {
 /* ===== TABLET HEADER ===== */
 @media (min-width: 600px) {
   .header { padding: 14px 32px 12px; }
-  .header-title { font-size: 38px; }
+  .header-logo-row { padding: 14px 32px 10px; }
+  .header-search-row { padding: 0 32px 14px; }
   .filter-bar-inner { padding: 10px 32px; }
   .menu-main { padding-bottom: 60px; }
   .category-header { padding: 24px 32px 14px; }
@@ -742,9 +739,10 @@ body {
 @media (min-width: 860px) {
   body { background: #efefef; }
   .header { padding: 16px 40px 14px; }
-  .header-title { font-size: 44px; }
-  .logo { height: 100px; width: 100px; }
-  .logo-fallback { height: 100px; width: 100px; }
+  .header-logo-row { padding: 16px 40px 12px; }
+  .header-search-row { padding: 0 40px 16px; }
+  .logo { height: 200px; width: 200px; }
+  .logo-fallback { height: 200px; width: 200px; }
   .filter-bar { background: #fff; }
   .filter-bar-inner { padding: 10px 40px; }
   .menu-main { background: #fff; padding-bottom: 80px; }
