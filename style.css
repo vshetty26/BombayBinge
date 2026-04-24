@@ -56,17 +56,17 @@ body {
   width: 180px;
   object-fit: cover;
   border-radius: 50%;
-  animation: logoGlow 4s ease-in-out infinite;
+  animation: logoEntrance 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 }
 
-@keyframes logoGlow {
-  0%, 100% { 
-    opacity: 0.85;
-    transform: scale(1);
+@keyframes logoEntrance {
+  from {
+    opacity: 0;
+    transform: translateY(-60px);
   }
-  50% { 
+  to {
     opacity: 1;
-    transform: scale(1.04);
+    transform: translateY(0);
   }
 }
 
@@ -83,7 +83,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  animation: logoGlow 4s ease-in-out infinite;
+  animation: logoEntrance 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 }
 
 .search-wrap {
